@@ -1,0 +1,257 @@
+/* Import a web font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8b0000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #8b0000;
+    color:  #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid  #ffffff;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: right;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #ffcba4;
+    text-align: center;
+    border-bottom: 1px solid  #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.menu-item {
+    color:  #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #F8DE22;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #FFF;
+}
+
+.menu-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #bcb88a ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    min-height: 300px;
+    background-color: #282828;
+    padding: 20px;
+    border: 1px solid #F8DE22;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 20px;
+    color: #F5F5F5;
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    transition: transform 0.5s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.text-content {
+    flex: 2;
+}
+
+.video-container, .image-container {
+    flex: 1 1 400px;
+    max-width: 400px;
+    border-radius: 0; 
+    overflow: hidden;
+}
+
+.video, .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0; 
+}
+
+.full-box {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+footer {
+    background-color: #191919;
+    color: #F5F5F5;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid #F8DE22;
+    opacity: 0;
+    animation: fadeIn 2.5s forwards;
+}
+
+.table-box {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #282828;
+    border: 1px solid #F8DE22;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    opacity: 0;
+    animation: slideUp 1s forwards;
+    transition: transform 0.5s;
+}
+
+.table-box:hover {
+    transform: translateY(-10px);
+}
+
+.table-title {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 32px; 
+    color: #F8DE22; 
+    margin-bottom: 10px; 
+    text-align: center;
+    width: 100%; 
+}
+
+.family-table {
+    width: 80%; 
+    border-collapse: collapse;
+    background-color: #282828;
+    color: #F5F5F5;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+}
+
+.family-table th, .family-table td {
+    border: 1px solid #F8DE22;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 16px; 
+}
+
+.family-table th {
+    background-color: #333333;
+    color: #F8DE22;
+    font-weight: bold;
+}
+
+.family-table tr:nth-child(even) {
+    background-color: #323232;
+}
+
+.family-table tr:nth-child(odd) {
+    background-color: #282828;
+}
+
+.family-table tr:hover {
+    background-color: #444444;
+    color: #F8DE22;
+}
+
+.family-image {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 0; 
+    transition: transform 0.3s ease;
+}
+
+.family-image:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

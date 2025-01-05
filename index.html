@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website - Homepage</title>
+	<link rel="stylesheet" href="style.css">
+	
+    <style>
+        body {
+            margin: 0;
+            background-color: #EFC3CA;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .header {
+            background-color: pink;
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .header img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-family: 'Times New Roman', serif;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        .nav {
+            background-color: #F72798;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content-video {
+            position: relative;
+            text-align: center;
+        }
+
+        .content-video video {
+            width: 100%;
+            display: block;
+        }
+
+        .content-video div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .content-video h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .content-video p {
+            font-size: 18px;
+        }
+
+        .social-links {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .social-links h3 {
+            font-family: 'Lobster', cursive;
+            font-size: 24px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .social-links img {
+            height: 50px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.1);
+        }
+
+        .footer {
+            text-align: center;
+            background-color: #F72798;
+            color: white;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <table width="100%" border="1">
+        <!-- Header Section -->
+      <tr>
+    <td colspan="2" class="header">
+        <table width="100%" style="padding: 10px 0;">
+            <tr>
+                <td align="center">
+                    <img src="image/logo.png" alt="Logo" style="height: 100px;">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <h1 style="font-size: 24px; margin: 10px 0;">WELCOME TO MY PERSONAL WEBSITE</h1>
+                    <p style="font-size: 14px; margin: 0;">MORE ABOUT ME</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+
+        <!-- Navigation Section -->
+        <tr>
+            <td colspan="2" class="nav">
+                <a href="index.html">HOMEPAGE</a> |
+                <a href="background.html">BACKGROUND</a> |
+                <a href="family.html">FAMILY</a> |
+                <a href="friends.html">FRIENDS</a> |
+                <a href="gallery.html">GALLERY</a>
+            </td>
+        </tr>
+
+        <!-- Content Section: Video -->
+        <tr>
+            <td colspan="2" class="content-video">
+                <video src="video/video3.mp4" autoplay muted loop></video>
+                <div>
+                    <h1>Welcome! Here's a glimpse into my world</h1>
+                    <p>My name is Nurul Hazimah Binti Rahmat, a student of Diploma in Information Management and currently in semester 5.</p>
+                    <p>I hope you enjoy and get to know me well through this website!</p>
+                </div>
+					<tr height="350">
+				<td colspan="6">
+				<div class="slideshow-container">
+					<!-- Slide 1: Image -->
+					<div class="slide">
+						<div class="numbertext">1 / 2</div>
+						<img src="image/genting1.jpg" style="width:100%" alt="Genting">
+						<div class="text">Genting</div>
+					</div>
+
+					<!-- Slide 2: Video -->
+					<div class="slide">
+						<div class="numbertext">2 / 2</div>
+						<video controls autoplay muted loop style="width: 100%;">
+							<source src="video/genting3.MP4" type="video/mp4">
+						</video>
+						<div class="text">Sunrise Genting</div>
+					</div>
+
+					<!-- Navigation Arrows -->
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+				</div>
+
+				<!-- Dots for Slide Navigation -->
+				<div>
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+				</div>
+
+			</tr>
+        <!-- Content Section: Social Links -->
+        <tr>
+            <td colspan="2" class="social-links">
+                <h3 style="font-family: 'Lobster'; color: #FF8F00; text-align: center;">Get in touch with me through:</h3>
+				<div style="text-align: center;">
+                <a href="https://www.instagram.com/hazimhrhmt_/" target="_blank">
+                    <img src="image/ig.png" alt="Instagram" style="width: 50px;">
+                </a>
+                <a href="https://x.com/hazimhrhmt1" target="_blank">
+                    <img src="image/x.png" alt="X" style="width: 50px;">
+                </a>
+			</div>
+            </td>
+        </tr>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 NURUL HAZIMAH BINTI RAHMAT</p>
+        </footer>
+    </table>
+		<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	// Function to navigate slides
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	// Function to go to a specific slide
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	// Function to show the current slide
+	function showSlides(n) {
+		let i;
+		let slides = document.getElementsByClassName("slide");
+		let dots = document.getElementsByClassName("dot");
+
+		if (n > slides.length) { slideIndex = 1 }
+		if (n < 1) { slideIndex = slides.length }
+
+		// Hide all slides
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+
+		// Deactivate all dots
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+
+		// Show the current slide and activate the corresponding dot
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+	}
+
+</script>
+</body>
+</html>

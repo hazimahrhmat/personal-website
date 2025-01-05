@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website - Homepage</title>
+	 <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            background-color: #EFC3CA;
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        .header {
+            background-color: pink;
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .header img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-family: 'Times New Roman', serif;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-style: italic;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .nav {
+            background-color: #F72798;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            background-color: #FFDEE5;
+            padding: 20px;
+        }
+
+        .content h2 {
+            font-family: Georgia, serif;
+            color: #333;
+        }
+
+        .content p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .content a {
+            color: #FF8F00;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .content-image {
+            display: block;
+            margin: 0 auto 20px;
+            border: 5px solid #F72798;
+            border-radius: 8px;
+        }
+
+        .video-container {
+            text-align: center;
+        }
+
+        .video-text {
+            margin-bottom: 20px;
+        }
+
+        .video-text h2 {
+            color: white;
+        }
+
+        .content-video {
+            border: 5px solid #F72798;
+            border-radius: 8px;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .social-links {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .social-links img {
+            margin: 0 10px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #F72798;
+            color: white;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+        .border-line {
+            height: px;
+            background-color: #F72798;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Header Section -->
+        <tr>
+            <td colspan="2" class="header">
+                <img src="image/logo.png" alt="Logo">
+                <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+                <p><i>"You are the author of your own story, weaving moments, dreams, and connections into a masterpiece uniquely yours."</i></p>
+            </td>
+        </tr>
+
+        <!-- Navigation Section -->
+        <tr>
+            <td colspan="2" class="nav">
+                <a href="index.html">HOMEPAGE</a> |
+                <a href="background.html">BACKGROUND</a> |
+                <a href="family.html">FAMILY</a> |
+                <a href="friends.html">FRIENDS</a> |
+                <a href="gallery.html">GALLERY</a>
+            </td>
+        </tr>
+
+        <!-- Content Section -->
+        <div class="content">
+            <table>
+                <tr>
+                    <td>
+                        <img src="image/agm.jpg" alt="Image 1" class="content-image" style="width: 30%; ">
+                        <h2 style="text-align: center;">About Me</h2>
+                        <p>Hello! My name is Nurul Hazimah Binti Rahmat, but everyone calls me Zima. I'm an ambivert who enjoys both socializing and alone time. I love indoor activities like playing badminton and watching movies, and I'm a sunset lover. I have strong communication and problem-solving skills and enjoy learning new tech tools. My dream is to make a meaningful impact in my field while balancing adventures and time with loved ones.</p>
+                        <a href="#top">Go up!</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border-line"></td>
+                </tr>
+                <tr>
+                    <td class="video-container">
+                        <div class="video-text">
+                            <h2>Nurul Hazimah</h2>
+                            <p>I was born on May 3, 2004, in Hospital Tuanku Jaafar, and I am now 20 years old. I have 4 siblings in my family and i'm the second one.I enjoy travel, listening to music, reading occasionally, and currently, I am in my final year of my diploma program. Here’s a simple video that gives a glimpse into my life.</p>
+                            <a href="#top">Go up!</a>
+                        </div>
+                        <video controls autoplay muted loop class="content-video" style="width: 30%; ">
+                            <source src="video/video1.mp4" type="video/mp4">
+                        </video>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border-line"></td>
+                </tr>
+                <tr>
+                    <td class="image-container">
+                        <img src="image/sch.jpg" alt="New Image" class="content-image" style="width: 30%; ">
+                        <h2>Education & Skills</h2>
+                        <p>I began my educational journey at Tadika Pasti Al-Iman for kindergarten, followed by Sekolah Kebangsaan Kampung Baru Si Rusa for primary school. Transitioning to secondary education, I specialized in business at SMK Kampung Baru Si Rusa. After graduating high school, I pursued a diploma at UiTM Rembau. Grateful for the privilege of education, I value the support of my family and mentors who have guided me along this path of learning and growth.Here is my<a href="file/resume.pdf" class="button" download> resume.</a></p>
+                        <a href="#top">Go up!</a>
+
+
+				
+
+                        <h2>Favourite Song</h2>
+                        <p align="center" style="margin-bottom: 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/WXx5-HGERcg?si=YcqWsrAxSLvgepgO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+                        <a href="#top">Go up!</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Social Links Section -->
+        <tr>
+            <td colspan="2" class="social-links">
+                <h3 style="font-family: 'Lobster'; color: #FF8F00; text-align: center;">Get in touch with me through:</h3>
+				<div style="text-align: center;">
+                <a href="https://www.instagram.com/hazimhrhmt_/" target="_blank">
+                    <img src="image/ig.png" alt="Instagram" style="width: 50px;">
+                </a>
+                <a href="https://x.com/hazimhrhmt1" target="_blank">
+                    <img src="image/x.png" alt="X" style="width: 50px;">
+                </a>
+			</div>
+            </td>
+        </tr>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 NURUL HAZIMAH BINTI RAHMAT</p>
+        </footer>
+    </table>
+</body>
+</html>

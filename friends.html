@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website - Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: pink;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', serif;
+        }
+
+        h2 {
+            font-family: 'Arial', sans-serif;
+            color: #F72798;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .navigation {
+            background-color: #F72798;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+
+        .content-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .video-container, .image-container, .text-container {
+            margin: 10px;
+            flex: 1;
+            max-width: 45%;
+        }
+
+        .video-container video, 
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .text-container p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #F72798;
+            color: white;
+            font-size: 14px;
+        }
+
+        .social-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .social-links img {
+            margin: 0 10px;
+            width: 50px;
+            height: auto;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- Header Section -->
+        <tr>
+            <td colspan="2" class="header">
+                <img src="image/logo.png" alt="Logo">
+                <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+                <p><i>"Friends are the siblings God never gave us." – Mencius</i></p>
+            </td>
+        </tr>
+
+        <!-- Navigation Section -->
+        <tr>
+            <td colspan="2" class="navigation">
+                <a href="index.html">HOMEPAGE</a> |
+                <a href="background.html">BACKGROUND</a> |
+                <a href="family.html">FAMILY</a> |
+                <a href="friends.html">FRIENDS</a> |
+                <a href="gallery.html">GALLERY</a>
+            </td>
+        </tr>
+
+        <!-- Content Section: Video and Text -->
+        <tr>
+            <td colspan="2">
+                <div class="content-box">
+                    <div class="video-container">
+                        <video controls autoplay muted loop>
+                            <source src="video/bestfriends.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="text-container">
+                        <h2>Friends</h2>
+                        <p>A friend is someone who cares about you, supports you, and enjoys spending time with you. They're there for you through good times and bad, offering a listening ear, a shoulder to lean on, and sometimes even a good laugh.</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="video-container">
+                        <video controls autoplay muted loop>
+                            <source src="video/sch.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="text-container">
+                        <h2>Memories</h2>
+                        <p>Memories with friends are like treasures we collect along life's journey. They're the spontaneous adventures, late-night conversations, and inside jokes that make us smile even years later.</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="video-container">
+                        <video controls autoplay muted loop>
+                            <source src="video/picnicc.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="text-container">
+                        <h2>Picnic Memories</h2>
+                        <p>"I hope we remain friends in another lifetime, sharing laughter and creating memories all over again."</p>
+                        <p>Here is a memory of us. We went to a picnic at Port Dickson.</p>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="image-container">
+                        <img src="image/friendss.jpg" alt="Best Friends">
+                    </div>
+                    <div class="text-container">
+                        <h2>My Bestfriends</h2>
+                        <p>This is a picture of me and my best friends. Throughout these 5 semesters, we've been friends since semester 1. I appreciate all the moments we shared together, from late-night study sessions to unforgettable adventures</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <!-- Social Links Section -->
+        <tr>
+            <td colspan="2" class="social-links">
+                <h3>Get in touch with me through:</h3>
+                <a href="https://www.instagram.com/hazimhrhmt_/" target="_blank">
+                    <img src="image/ig.png" alt="Instagram">
+                </a>
+                <a href="https://x.com/hazimhrhmt1" target="_blank">
+                    <img src="image/x.png" alt="X">
+                </a>
+            </td>
+        </tr>
+
+        <!-- Footer Section -->
+        <tr>
+            <td colspan="2" class="footer">
+                &copy; 2024 NURUL HAZIMAH BINTI RAHMAT
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
